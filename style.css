@@ -1,9 +1,32 @@
 * {
   scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
   margin: 4rem;
+}
+
+#top-scroll {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+  z-index: 99;
+  cursor: pointer;
+  display: none;
+  font-size: 2rem;
+  color: #f1bc2cf1;
+  border: 3px solid #ffc72c;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  outline: none;
+  transition: all 0.5s;
+}
+
+#top-scroll:hover {
+  background-color: #ffc72c;
+  color: #fff;
 }
 
 header {
@@ -13,23 +36,49 @@ header {
   background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
 }
 
-header nav {
-  background-color: rgba(0, 0, 0, 0.5);
+header nav .nav-item {
+  margin: 0px 7px;
+  transition: all 0.35s;
+}
+
+header nav .icon {
+  font-size: 23px;
+  margin: 0px 7px;
 }
 
 header nav a {
+  font-weight: 600;
+}
+
+header nav .icon:hover {
+  color: #ffc72c;
+}
+
+header nav.no-color a {
   color: #fff !important;
 }
 
-header nav li:hover {
-  background-color: #f1bc2cf1 ;
+header nav.no-color .nav-item:hover {
+  background-color: #ffc72c ;
+}
+
+header nav.white {
+  background-color: #fff;
+}
+
+header nav.white a {
+  color: #cc208e !important;
+}
+
+header nav.white a:hover {
+  color: #ffc72c !important;
 }
 
 header .bg {
   background-image: url("images/profile.png");
-  height: 85vh;
+  height: 86vh;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 45% 50%;
   opacity: 0.3;
 }
 
@@ -38,6 +87,14 @@ header .about-me {
   top: 17em;
   color: #fff;
   z-index: 10;
+}
+
+header .about-me h1 {
+  font-family: 'Sniglet', cursive;
+}
+
+header .about-me h5 {
+  font-family: 'Cabin', sans-serif;
 }
 
 section {
@@ -52,19 +109,30 @@ section {
   padding: 2rem;
 }
 
+#about h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #2E4053;
+}
+
 .profile2 {
   height: 85%;
-  /* border: 3px solid #da48f7; */
-  border: 4px solid #f1bc2cf1;
+  border: 4px solid #cc208e;
   border-radius: 100%;
+  transition: all 0.3s;
 }
 
 .profile2:hover {
-  border: 4px solid #da48f7;
+  border: 4px solid #f1bc2cf1;
 }
 
-.content {
+#about .content {
   width: 30%;
+}
+
+#about p {
+   color: #616A6B;
+   line-height: 1.85;
+   word-spacing: 5px;
 }
 
 #work, #contact {
@@ -73,14 +141,83 @@ section {
 
 #work h1, #contact h1 {
   color: #fff;
+  font-family: 'Raleway', sans-serif;
 }
 
 .card {
   margin-top: 2rem;
 }
 
+.card .card-img-top {
+  height: 30vh;
+}
+
+.card .card-body {
+  /* height: 40vh; */
+}
+
+.card .card-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: #2E4053;
+}
+
+.card .card-text {
+  font-family: 'Open Sans', sans-serif;
+  color: #616A6B;
+}
+
+.card .btn-primary {
+  background-color: #f1bc2cf1;
+  border: 1px solid transparent;
+}
+
+.card .btn-primary:hover {
+  background-color: #e2ae1ff1;
+  border: 1px solid transparent;
+}
+
+.card .btn-outline-primary {
+  color: #f1bc2cf1;
+  border: 1px solid #f1bc2cf1;
+}
+
+.card .btn-outline-primary:hover {
+  background-color: #f1bc2cf1;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+#skills {
+  padding-bottom: 1rem;
+}
+
+#skills .language p {
+  display: inline-block;
+  margin: 7px;
+  background-color: #cc208e;
+  padding: 8px;
+  color: #fff;
+  border-radius: 20%;
+}
+
+#skills h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #2E4053;
+}
+
+#skills h3 {
+  font-family: 'Cabin', sans-serif;
+  color: #2E4053;
+}
+
+#skills .language p:hover {
+  background-color: #f1bc2cf1;
+}
+
 #skills .certificate {
   text-align: center;
+  margin-top: 2em;
 }
 
 #skills .certificate img {
@@ -96,20 +233,83 @@ section {
 
 .form {
   text-align: left;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.form form {
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  padding: 2.3rem;
+  padding-right: 5rem;
+  background-color: rgba(255, 255, 255, 0.212);
+  box-shadow: 3px 3px 10px 10px rgba(255, 255, 255, 0.733);
+}
+
+.form input, .form textarea {
+  padding: 0.5rem;
+  width: 115%;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+.form .btn {
+  background-color: transparent;
+  border: 1px solid #ffc72c;
+  color: #ffc72c;
+}
+
+.form .btn:hover {
+  background-color: #f1bc2cf1;
+  color: #fff;
+}
+
+#contact {
+  padding: 2rem;
+}
+
+#contact .container {
+  padding: 0px;
+}
+
+#contact h1 {
+  font-family: 'Sniglet', cursive;
 }
 
 #contact h4  {
+  font-family: 'Cabin', sans-serif;
   margin-bottom: 2rem;
 }
 
 #contact a {
   color: #fff;
   margin: 1rem;
+  padding: 0.5rem;
+  font-size: 40px;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+
+#contact a:hover {
+  background-color: #fff;
+  color: #cc208e;
+  border-radius: 100%;
+}
+
+#contact .icon {
+  transition: 0.8s;
+  padding: 0.5rem;
+}
+
+#contact .icon:hover {
+  transform: rotate(360deg);
 }
 
 footer {
   text-align: center;
   background-color: #273746;
   color: #fff;
-  padding: 0.5rem;
+  padding: 0.7rem;
 }
