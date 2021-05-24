@@ -9,14 +9,15 @@ h1 {
 
 #top-scroll {
   position: fixed;
-  bottom: 1.5rem;
-  right: 2rem;
+  bottom: 1rem;
+  right: 0.5rem;
   z-index: 99;
   cursor: pointer;
   display: none;
   font-size: 2rem;
   color: #f1bc2cf1;
   border: 3px solid #ffc72c;
+  background-color: #fff;
   height: 55px;
   width: 55px;
   border-radius: 50%;
@@ -91,14 +92,12 @@ header .about-me {
 
 header .about-me h1 {
   font-family: 'Sniglet', cursive;
+  margin: auto;
 }
 
 header .about-me h5 {
   font-family: 'Cabin', sans-serif;
-}
-
-section {
-  /* height: 100vh; */
+  margin-top: 0.5rem;
 }
 
 .container-fluid {
@@ -152,10 +151,6 @@ section {
   height: 30vh;
 }
 
-.card .card-body {
-  /* height: 40vh; */
-}
-
 .card .card-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -196,6 +191,7 @@ section {
   display: inline-block;
   margin: 7px;
   background-color: #cc208e;
+  font-weight: 550;
   padding: 8px;
   color: #fff;
   border-radius: 20%;
@@ -222,8 +218,8 @@ section {
 
 #skills .certificate img {
   margin-top: 3rem;
-  height: 70%;
-  width: 70%;
+  height: 60%;
+  width: 60%;
 }
 
 #contact {
@@ -235,7 +231,7 @@ section {
   text-align: left;
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .form form {
@@ -257,7 +253,7 @@ section {
 
 .form .btn {
   background-color: transparent;
-  border: 1px solid #ffc72c;
+  border: 2px solid #ffc72c;
   color: #ffc72c;
 }
 
@@ -285,7 +281,6 @@ section {
 
 #contact a {
   color: #fff;
-  margin: 1rem;
   padding: 0.5rem;
   font-size: 40px;
   transition: all 0.2s;
@@ -312,4 +307,127 @@ footer {
   background-color: #273746;
   color: #fff;
   padding: 0.7rem;
+}
+
+/* Media Queries */
+
+/* Mobile phone size */
+@media (min-width: 320px) and (max-width: 480px) {
+ 
+  h1 {
+    margin: auto;
+  }
+  
+  /* Header */
+  header {
+    height: 78vh;
+    overflow: hidden;
+  }
+
+  header nav.no-color {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  header .bg {
+    height: 80vh;
+    transform: translate(-15%, -30%);
+  }
+
+  header .about-me {
+    top: 13em;
+  }
+
+  header .about-me h1 {
+    font-size: 2rem;
+  }
+
+  /* About */
+  .photo-div {
+    text-align: center;
+  }
+
+  #about p {
+    font-size: 17px;
+  }
+
+  /* Work */
+  .card .card-text {
+    font-size: 16px;
+  }
+
+  /* Skills */
+  #skills .certificate img {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Contact */
+  #contact h1 {
+    font-size: 2.3rem;
+  }
+
+  #contact h4 {
+    font-size: 1.3rem;
+  }
+
+}
+
+/* Tablet size */
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    margin: auto;
+  }
+  
+  /* Header */
+  header {
+    height: 70vh;
+    overflow: hidden;
+  }
+
+  header nav.no-color {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  header .bg {
+    height: 80vh;
+    transform: translate(-5%, -20%);
+  }
+
+  header .about-me {
+    top: 15em;
+  }
+
+  header .about-me h1 {
+    font-size: 2rem;
+  }
+
+    /* About */
+    .photo-div {
+      text-align: center;
+    }
+  
+    #about p {
+      font-size: 17px;
+    }
+  
+    /* Work */
+    .card .card-text {
+      font-size: 16px;
+    }
+  
+    /* Skills */
+    #skills .certificate img {
+      height: 100%;
+      width: 100%;
+    }
+  
+    /* Contact */
+    #contact h1 {
+      font-size: 2.3rem;
+    }
+  
+    #contact h4 {
+      font-size: 1.3rem;
+    }
+
 }
