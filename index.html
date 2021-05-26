@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Bootstrap Stylesheet -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -14,18 +16,23 @@
       crossorigin="anonymous"
     />
 
+    <!-- Google Fonts CDN -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Open+Sans&family=Raleway&family=Sniglet&display=swap" rel="stylesheet">
 
+    <!-- Fontawesome Icons CDN -->
     <script src="https://kit.fontawesome.com/5986627d7c.js" crossorigin="anonymous"></script>
 
     <title>My Portfolio</title>
   </head>
   <body>
 
+    <!-- Scroll Button -->
     <button id="top-scroll"><i class="fas fa-arrow-up"></i></button>
 
     <header>
+
+      <!-- Navbar -->
       <nav id="navbar" class="navbar no-color fixed-top navbar-expand-lg navbar-dark">
 
         <button
@@ -61,16 +68,16 @@
           <ul class="navbar-nav ml-auto">
     
             <li>
-              <a class="nav-link" href="#"><i class="far fa-envelope icon"></i></a>
+              <a class="nav-link" href="mailto:ramanpreets529@gmail.com"><i class="far fa-envelope icon"></i></a>
             </li>
             <li>
-              <a class="nav-link" href="#"><i class="fab fa-linkedin icon"></i></a>
+              <a target="_blank" class="nav-link" href="https://www.linkedin.com/in/ramanpreet-singh-2404531b4"><i class="fab fa-linkedin icon"></i></a>
             </li>
             <li>
-              <a class="nav-link" href="#"><i class="fab fa-github icon"></i></a>
+              <a target="_blank" class="nav-link" href="https://github.com/raman5911"><i class="fab fa-github icon"></i></a>
             </li>
             <li>
-              <a class="nav-link" href="#"><i class="fab fa-instagram icon"></i></a>
+              <a target="_blank" class="nav-link" href="https://www.instagram.com/ramanpreet.singh21"><i class="fab fa-instagram icon"></i></a>
             </li>
 
           </ul>
@@ -79,6 +86,7 @@
 
       </nav>
 
+      <!-- Header content -->
       <div class="about-me">
         <h1>Hi!, I am Ramanpreet Singh</h1>
         <h5>
@@ -87,17 +95,23 @@
         </h5>
       </div>
 
+      <!-- div for background image -->
       <div class="bg"></div>
     </header>
 
+    <!-- About section -->
     <section id="about" class="container-fluid">
       <h1>About Me</h1>
 
       <div class="container">
         <div class="row">
+
+          <!-- Profile photo -->
           <div class="col-lg-3 photo-div">
             <img class="profile2" src="/images/profile2.JPG">
           </div>
+
+          <!-- Content -->
           <div class="col-lg-7">
             <p class=".content">I am a final year student pursuing Bachelor of Technology in Computer Science from Bhagwan Mahavir college of Engineering and Management (BMCEM), Sonipat, which is affiliated to Guru Gobind Singh Indraprastha University (GGSIPU), Delhi.</p>
 
@@ -108,6 +122,7 @@
 
     </section>
 
+    <!-- Projects Section -->
     <section id="work" class="container-fluid">
       <h1>Personal Projects</h1>
     
@@ -191,11 +206,13 @@
     
     </section>
     
+    <!-- Skills section -->
     <section id="skills" class="container-fluid">
       <h1>Technical Skills & Certifications</h1>
       <div class="container">
         <h3>Technical Skills</h3>
         
+        <!-- skills -->
         <div class="language">
           <p>C++</p>
           <p>HTML5</p>
@@ -208,6 +225,7 @@
           <p>Mongodb</p>
         </div>
         
+        <!-- certificates -->
         <div class="certificate">
           <h3>Certifications</h3>
           <a target="_blank" href="https://students.codingninjas.com/verify/4dd6b9a56ec83509"><img src="/images/cn-certificate.JPG" alt=""></a>
@@ -217,12 +235,14 @@
       </div>
     </section>
 
+    <!-- Contact section -->
     <section id="contact" class="container-fluid">
       
       <div class="container">
         <h1>Need a website?</h1>
         <h4>You can reach out to me. Let's have a chit-chat together!</h4>
   
+        <!-- Form -->
         <div class="form">
           <form action="mailto:ramanpreets529@gmail.com" method="post">
 
@@ -249,10 +269,11 @@
         <h1>Liked my work?</h1>
         <h4>You can share your ideas and feedback with me via</h4>
 
-        <a href="mailto:ramanpreets529@gmail.com"><i class="far fa-envelope icon"></i></a>
-        <a href="https://github.com/raman5911"><i class="fab fa-github icon"></i></a>
-        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin icon"></i></a>
-        <a href="https://www.instagram.com"><i class="fab fa-instagram icon"></i></a>
+        <!-- Links to my social profiles -->
+        <a  href="mailto:ramanpreets529@gmail.com"><i class="far fa-envelope icon"></i></a>
+        <a target="_blank" href="https://github.com/raman5911"><i class="fab fa-github icon"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/ramanpreet-singh-2404531b4"><i class="fab fa-linkedin icon"></i></a>
+        <a target="_blank" href="https://www.instagram.com/ramanpreet.singh21"><i class="fab fa-instagram icon"></i></a>
 
       </div>
 
@@ -262,6 +283,7 @@
       © Created by Ramanpreet Singh.
     </footer>
 
+    <!-- Bootstrap script CDN -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -278,6 +300,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Javascript file -->
     <script src="/script.js"></script>
 
   </body>
